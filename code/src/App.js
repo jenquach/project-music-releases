@@ -1,12 +1,16 @@
-import React from 'react'
-import data from './data.json'
+import React from "react";
+import data from "./data.json";
 
-console.log(data)
+import Article from "components/Article";
+
 
 export const App = () => {
-  return (
+	return (
+		
     <div>
-      Find me in src/app.js!
+<Article/>
+<Article/>
+<Article/>
     </div>
-  )
-}
+	);
+};
