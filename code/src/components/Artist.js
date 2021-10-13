@@ -1,11 +1,36 @@
-/* import React from "react";
-import data from "./data.json";
+import React from "react";
 
-export const Artist = () => {
-	fetch()
-		.then((data) => data.json)
-		.then((data) => {
-			console.log(data.name);
-		});
-};
- */
+
+// const Artist = (album) => { 
+// 	return
+// 		{album.artists.map((artist) => { 
+// 			return ( 
+// 				<a key={artist.name} href={artist.external_urls.spotify}> {artist.name} </a>
+// 			)
+// 	 })
+// }	
+
+// const Artist = (props) => { 
+// 	return 
+// 	{props.artists.map((artist) => { 
+// 	return ( 
+// 	<a key={artist.name} href={artist.external_urls.spotify}> {artist.name} </a>
+// 	)
+// 	 })
+	
+// 	}
+
+const Artist = (artists) => {
+	console.log("123445",artists)
+/* 		return artists.map((artist) => (
+			// <a key={artist.name} href={artist.external_urls.spotify}>
+				// {artist.name}
+				hdj
+			// </a>
+		)); */
+		return (
+			<p>hej</p>
+		)
+	};
+
+	export default Artist

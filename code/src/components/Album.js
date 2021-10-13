@@ -1,19 +1,18 @@
 import React from "react";
+import Artist from "components/Artist";
 
+const Album = (album) => {
+console.log(album.title)
 
-// import Artist from ""./Artist"
-
-const Album = () => {
 	return (
-		<div className="albums">
-    	<img src="https://i.scdn.co/image/a8b8d0bd26dc496f5b9ea65994172c5d541aa1b9" alt="img-info"/>
-			<h2>Album title</h2>
-			
-			<p>Artist</p>
-			{/* <Artist /> */}
-			
-		</div>
-	);
-};
+		<div className="cards">
+    	{/* <img src={album.img} alt="img-info"/> */}
+			<h2>title {album.title}</h2>
+			<Artist artists/>
 
+			{/* <h3 className="artist-name"> <Artist artists = {Artist.name} /></h3> */}
+		</div>		
+	)		
+};
+ 
 export default Album
