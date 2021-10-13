@@ -5,18 +5,54 @@ body {
 		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	background-color: rgb(24,24,24);
 }
 
-code {
+.code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 		monospace;
 }
 
-.article {
-	width: 300px;
-	border: 2px solid rgb(36, 35, 35);
-	padding: 15px;
+.container{
+
+	margin: 15px 15px;
+	color: white;
 }
+
+.hr{
+
+	height: 1px; 
+	color: rgb(46, 43, 43); 
+	background-color: rgb(56, 53, 53); 
+	border: none; 
+	margin-top: -9px;
+}
+
+.album-container{
+	background-color: rgb(24,24,24);
+	display: grid;
+	grid-template-columns: repeat(4, 0fr);
+	grid-template-rows: 1fr;
+	grid-gap: 5px ;
+	margin-top: 30px;
+	
+	
+}
+
+.albums {
+
+	/* border: 2px solid rgb(36, 35, 35); */
+	padding: 15px;
+	
+}
+
+.albums img{
+
+	width: 420px;
+
+}
+
+
 .article-tag-container {
 	display: flex;
 }
