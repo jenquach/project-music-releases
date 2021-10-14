@@ -37,7 +37,7 @@ text-align: center;
 }
 
 .album-container{
-	background-color: rgb(24,24,24);
+
 	display: grid;
 	grid-template-columns: repeat(1, 0fr);
 	grid-template-rows: 1fr;
@@ -63,37 +63,36 @@ text-align: center;
 
 .AlbumTextContainer{
 	display: flex;
-	flex-wrap: wrap;
 	
-flex-direction: column;
-height: 65px;
-text-decoration: none;
+	flex-direction: column;
+  height: 65px;
+  text-decoration: none;
 
 }
 
 
 .AlbumTitle{
-	margin: 2px 0;
-font-size: 18px;
+  margin: 2px 0;
+  font-size: 18px;
 
-flex-direction: row;
-display: inline-block;
+  flex-direction: row;
+  display: inline-block;
 }
 
 .AlbumTitle:hover{
-text-decoration: underline;
+  text-decoration: underline;
 
 	
 }
 
 .ArtiistName{
-	display: block;
+	
 	margin: 2px 0;
 	font-size: 15px;
 	flex-direction: row;
 	height: 50px;
 	white-space: wrap;
-	overflow: hidden;
+	overflow: hidden; 
 	display: inline-block;
 	
 
@@ -106,7 +105,7 @@ text-decoration: underline;
 
 .link{
 
-color: white;
+  color: white;
 
 }
 
@@ -192,17 +191,10 @@ opacity: 50%;
 	
 		}
 
-.article-tag-container {
-	display: flex;
-}
 
-.article-tag {
-	background-color: #999;
-	padding: 5px;
-	border: 1px solid #333;
-	margin: 1px;
-}
 
+
+/* Desktop */
 
 @media (min-width: 1025px) {
 	
@@ -227,6 +219,7 @@ opacity: 50%;
 	
 }
 
+/* Tablet */
 
 @media (min-width: 768px) and (max-width: 1024px){
 

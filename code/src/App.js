@@ -12,7 +12,7 @@ export const App = () => {
 	return (
     <div className="container">
       <Header/>
-      <div className="album-container">
+    <div className="album-container">
 
 
       {albumArray.map((album) => {
@@ -25,22 +25,24 @@ export const App = () => {
             artist={album.artists.map((item) => 
             
 
-              <div>  <div>
-           <a className="link" target="_blank" key={item.name} href={item.external_urls.spotify}>
-            <h2 className="AlbumTitle"> {album.name} </h2></a>
-            </div>
+              <div>  
+               <div>
+                  <a className="link" target="_blank" key={item.name} href={item.external_urls.spotify}>
+                  <h2 className="AlbumTitle"> {album.name} </h2></a>
+               </div>
             
             <div> 
-            <a className="link" target="_blank" key={item.name} href={item.external_urls.spotify}>
-            <h3 className="ArtiistName">{item.name}</h3></a>
-</div></div>
+                   <a className="link" target="_blank" key={item.name} href={item.external_urls.spotify}>
+                   <h3 className="ArtiistName">{item.name}</h3></a>
+            </div>
+               </div>
            
            )
        }
           />
         )
       })}
-      </div>
+    </div>
     </div>
   )
 }
