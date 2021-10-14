@@ -14,8 +14,12 @@ body {
 }
 
 .container{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
 	width: 100%;
-	margin: 15px 0px;
+	margin: 0 auto;
+	/* margin: 15px 0px; */
 	color: rgb(255,255, 255);
 }
 
@@ -24,60 +28,39 @@ body {
 	text-align: center;
 }
 
-.hr{
-	height: 1px; 
-	color: rgb(46, 43, 43); 
-	background-color: rgb(56, 53, 53); 
-	border: none; 
-	margin: -9px 0 -18px 0;
-}
-
 .album-container{
-
 	display: grid;
-	grid-template-columns: repeat(1, 0fr);
-	grid-template-rows: 1fr;
-	grid-gap: 1px ;
+	grid-template-columns: 0fr;
 	align-items: center;
+	grid-gap: 1px ;
 	justify-content: center;
-	margin: 15px 0px;
-	
-	
-	
+	/* margin: 15px 0px; */
+	padding-top: 10px;
+	border-top: 1px solid rgb(56, 53, 53);
 }
 
 .albums{
-
 	margin: 15px 0;
-
 }
 
-
-
 /* Text styling */
-
 
 .album-textcontainer{
 	display: flex;
 	flex-direction: column;
   height: 65px;
   text-decoration: none;
-
 }
-
 
 .album-title{
   margin: 2px 0;
   font-size: 18px;
-
   flex-direction: row;
   display: inline-block;
 }
 
 .album-title:hover{
-  text-decoration: underline;
-
-	
+  text-decoration: underline;	
 }
 
 .artist-name{
@@ -106,11 +89,11 @@ text-decoration: underline;
 
 .albums img{
 	display: block;	
-	width: 440px;
+	width: 350px;
 }
 
 .albums img:hover{
-	width: 440px;
+	width: 350px;
 }
 
 .overlay {
@@ -119,8 +102,8 @@ text-decoration: underline;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	height: 440px;
-	width: 440px;
+	height: 350px;
+	width: 350px;
 	opacity: 0;
 	transition: .5s ease;
 	background-color: #000000bb;
@@ -139,25 +122,25 @@ text-decoration: underline;
 /*  ICON */
 
 .logo-heart{
-	width: 50px;
+	width: 40px;
 	opacity: 50%;
 }
 
 .logo-play{
-	width: 100px;
+	width: 80px;
 	margin: 0 30px;
 	opacity: 50%;
 }
 
 .logo-play:hover{
-	width: 100px;
+	width: 80px;
 	margin: 0 30px;
 	opacity: 100%;
 	transform: scale(125%);
 }
 
 .logo-dot{
-	width: 50px;
+	width: 40px;
 	opacity: 50%;
 }
 
@@ -165,41 +148,115 @@ text-decoration: underline;
 	opacity: 100%;
 }
 
-/* Desktop */
-
-@media (min-width: 1025px) {
-	
-.header-container h1{
-	font-size: 25px;	
-	text-align: left;
-}
-
-.album-container{	
-	grid-template-columns: repeat(4, 0fr);
-	grid-template-rows: 1fr;
-	grid-gap: 15px ;
-	margin-top: 30px;
-	justify-content: space-between;		
-}	
-}
-
 /* Tablet */
 
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 768px) {
 
-.header-container h1{
-	width: 768px;
-	font-size: 25px;	
-	text-align:left;
-	margin-left: -15px;	
+	.container {
+		align-items: center;
+	}
+
+	.header-container {
+		width: 768px;
+	}
+
+	.header-container h1{
+		font-size: 25px;	
+		text-align:left;
+		margin-left: -15px;	
+	}
+	
+	.album-container{
+		max-width: 800px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 15px;
+		padding: 10px;
+	}
+
+	.albums img{
+		width: 360px;
+	}
+
+	.albums img:hover{
+		width: 360px;
+	}
+
+	.overlay {
+		height: 360px;
+		width: 360px;
+	}	
+
+	.logo-heart{
+		width: 35px;
+		opacity: 50%;
+	}
+
+	.logo-play{
+		width: 70px;
+
+	}
+
+	.logo-play:hover{
+		width: 70px;
+	}
+
+	.logo-dot{
+		width: 35px;
+	}
 }
 
+/* Desktop */
 
-.album-container{
-	width: 768px;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 15px;
-	padding: 0 50px;	
-}
+@media (min-width: 1100px) {
+
+	.header-container {
+		width: 870px;
+	}
+	
+	.header-container h1{
+		font-size: 25px;	
+		text-align: left;
+	}
+
+	.album-container{	
+		max-width: 900px;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 1fr;
+		grid-gap: 5px ;
+		padding-top: 20px;
+		justify-content: space-between;	
+		align-content: center;	
+	}
+
+	.albums img{
+		width: 200px;
+	}
+
+	.albums img:hover{
+		width: 200px;
+	}
+
+	.overlay {
+		height: 200px;
+		width: 200px;
+	}	
+
+	.logo-heart{
+		width: 25px;
+		opacity: 50%;
+	}
+
+	.logo-play{
+		width: 50px;
+
+	}
+
+	.logo-play:hover{
+		width: 50px;
+	}
+
+	.logo-dot{
+		width: 25px;
+	}
 }
