@@ -20,13 +20,13 @@ export const App = () => {
             cover={album.images[0].url} 
             albumurl={album.external_urls.spotify} 
             artist={album.artists.map((item) => 
-              <div>  
+              <div key={item.id}>  
                 <div>
-                  <a className="link" target="_blank" key={item.name} href={item.external_urls.spotify}>
+                  <a className="link" target="_blank" rel="noopener noreferrer" href={item.external_urls.spotify}>
                   <h2 className="album-title">{album.name}</h2></a>
                 </div>
                 <div> 
-                  <a className="link" target="_blank" key={item.name} href={item.external_urls.spotify}>
+                  <a className="link" target="_blank" rel="noopener noreferrer" href={item.external_urls.spotify}>
                   <h3 className="artist-name">{item.name}</h3></a>
                 </div>
               </div>   

@@ -16,16 +16,21 @@ body {
 .container{
 	display: flex;
 	flex-direction: column;
-	align-content: center;
-	width: 100%;
-	margin: 0 auto;
-	/* margin: 15px 0px; */
+
 	color: rgb(255,255, 255);
 }
 
 .header-container h1{
 	font-size: 25px;	
 	text-align: center;
+}
+
+.hr{
+	height: 1px; 
+	color: rgb(46, 43, 43); 
+	background-color: rgb(56, 53, 53); 
+	border: none; 
+	margin: -9px -9px -18px -7px;
 }
 
 .album-container{
@@ -36,7 +41,6 @@ body {
 	justify-content: center;
 	/* margin: 15px 0px; */
 	padding-top: 10px;
-	border-top: 1px solid rgb(56, 53, 53);
 }
 
 .albums{
@@ -152,39 +156,38 @@ text-decoration: underline;
 
 @media (min-width: 768px) {
 
-	.container {
-		align-items: center;
-	}
-
 	.header-container {
-		width: 768px;
+		width: 728px;
 	}
 
 	.header-container h1{
 		font-size: 25px;	
 		text-align:left;
-		margin-left: -15px;	
 	}
+
+	.hr{ 
+		margin: -9px 0px 2px 0px;
+	}	
 	
 	.album-container{
-		max-width: 800px;
+		max-width: 728px;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-gap: 15px;
-		padding: 10px;
+		padding: 0 0 0 5px;
 	}
 
 	.albums img{
-		width: 360px;
+		width: 350px;
 	}
 
 	.albums img:hover{
-		width: 360px;
+		width: 350px;
 	}
 
 	.overlay {
-		height: 360px;
-		width: 360px;
+		height: 350px;
+		width: 350px;
 	}	
 
 	.logo-heart{
@@ -194,7 +197,6 @@ text-decoration: underline;
 
 	.logo-play{
 		width: 70px;
-
 	}
 
 	.logo-play:hover{
@@ -208,55 +210,57 @@ text-decoration: underline;
 
 /* Desktop */
 
-@media (min-width: 1100px) {
+@media (min-width: 1024px) {
 
 	.header-container {
-		width: 870px;
+		width: 984px;
 	}
 	
 	.header-container h1{
 		font-size: 25px;	
-		text-align: left;
+	}
+
+	.hr{ 
+		margin: -9px 0 -18px 0;
 	}
 
 	.album-container{	
-		max-width: 900px;
+		max-width: 984px;
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: 1fr;
 		grid-gap: 5px ;
 		padding-top: 20px;
-		justify-content: space-between;	
-		align-content: center;	
+		justify-content: space-between;		
 	}
 
 	.albums img{
-		width: 200px;
+		width: 240px;
 	}
 
 	.albums img:hover{
-		width: 200px;
+		width: 240px;
 	}
 
 	.overlay {
-		height: 200px;
-		width: 200px;
+		height: 240px;
+		width: 240px;
 	}	
 
 	.logo-heart{
-		width: 25px;
+		width: 30px;
 		opacity: 50%;
 	}
 
 	.logo-play{
-		width: 50px;
+		width: 60px;
 
 	}
 
 	.logo-play:hover{
-		width: 50px;
+		width: 60px;
 	}
 
 	.logo-dot{
-		width: 25px;
+		width: 30px;
 	}
 }
