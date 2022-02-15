@@ -1,12 +1,20 @@
 # Music Releases
-Replace this readme with your own information about your project.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+During this week's project we did a new album and single releases app. We used React components to build it.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+When we started this project we started to fetch the data by importing the data to each component. Later we learned how to only import the data into the first compontent and then use props to send the data to the rest of the compontents.
+
+We also learned what the use of the "key" is. We had a lot of problem with naming unique key names, but we learned how to naming them correctly and also where we need to add them.
+
+## Tech
+
+* CSS
+* JavaScript 
+* React
+* API
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://j-j-music-app.netlify.app
