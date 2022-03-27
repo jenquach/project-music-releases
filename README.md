@@ -8,6 +8,13 @@ When we started this project we started to fetch the data by importing the data 
 
 We also learned what the use of the "key" is. We had a lot of problem with naming unique key names, but we learned how to naming them correctly and also where we need to add them.
 
+Learning Objectives:
+
+* How to write React components
+* How to use .map to iterate over an array of data and mount many components
+* How to use React props to feed information to components
+* How to structure React projects into small chunks
+
 ## Tech
 
 * CSS
